@@ -7,8 +7,7 @@
 
 ## 🔗 Acesso
 
-👉 **[Ver o site](https://seuusuario.github.io/cartao-de-visitas)**
-*(substitua "seuusuario" pelo seu usuário do GitHub)*
+👉 **[Ver o site](https://juliamelodumont.github.io/ibtech)**
 
 ---
 
@@ -92,6 +91,10 @@ As cores podem ser alteradas facilmente editando as variáveis no topo do `style
 **Julia Dumont**
 Estudante de CID-IA • Ibmec RJ • Membro do IBTech
 Formada no Liceo Scientifico — Fundação Torino (2025)
+
+🐙 [github.com/juliamelodumont](https://github.com/juliamelodumont)
+💼 [linkedin.com/in/julia-dumont](https://linkedin.com/in/julia-dumont)
+📧 juliamelodumont@gmail.com
 
 ---
 
