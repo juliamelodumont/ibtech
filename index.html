@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cartão de Visitas | Julia Ribeiro Melo Dumont</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav" role="navigation" aria-label="Menu principal">
+        <span class="nav__logo" aria-label="Logo">JD</span>
+
+        <ul class="nav__links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#video">Vídeo</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <button class="btn-tema" id="btnTema" aria-label="Alternar tema claro e escuro">🌙</button>
+    </nav>
+    <header class="hero" role="banner">
+        <img
+            src="IMG_2714 2.jpeg"
+            alt="minha foto(julia melo)"
+            class="hero__foto"
+        >
+
+        <div class="hero__texto">
+            <h1 class="hero__nome">Julia Dumont</h1>
+
+            <!-- Este parágrafo vai receber a animação de digitação via JS -->
+            <!-- ✏️ MUDE as frases lá no script.js (no array `frases`) -->
+            <p class="hero__cargo" id="typing-text">Carregando...</p>
+
+            <!-- ✏️ MUDE: uma frase curta que te representa -->
+            <!-- Pode ser uma citação, seu lema, ou o que você quer transmitir -->
+            <p class="hero__frase">"Coloque aqui uma frase que te representa"</p>
+
+            <div class="hero__botoes">
+                <a href="#contato" class="btn btn--primario">Entre em contato</a>
+
+                <!-- ✏️ MUDE: se tiver um currículo em PDF, coloque o caminho no href -->
+                <!-- Se não tiver, pode remover este botão -->
+                <a href="curriculo.pdf" class="btn btn--secundario" download>Baixar CV</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             SEÇÃO SOBRE MIM
+             ===================================================== -->
+        <section id="sobre" class="secao" aria-labelledby="titulo-sobre">
+            <h2 class="secao__titulo" id="titulo-sobre">Sobre mim</h2>
+
+            <div class="sobre__conteudo">
+                <div class="sobre__texto">
+
+                    <p>
+                        Oi! Sou a Julia Dumont, tenho 18 anos e sou carioca de coração.
+                        Me formei em 2025 no Liceo Scientifico da Fundação Torino e agora estou
+                        cursando Ciência de Dados e Inteligência Artificial no Ibmec RJ — uma
+                        área que me encanta cada dia mais.
+                    </p>
+
+                    <p>
+                        Família e amigos são tudo pra mim. Adoro passar tempo com as pessoas
+                        que amo, seja numa praia do Rio, num almoço de domingo ou nas atividades
+                        da igreja, onde sou bem ativa e encontro muita inspiração e propósito
+                        para a vida.
+                    </p>
+
+                    <p>
+                        Sou apaixonada por esportes — especialmente tênis — e acredito muito
+                        nos seus benefícios para a saúde física e mental. E quando o assunto é
+                        tecnologia, estou sempre curiosa e com muita vontade de aprender. O futuro
+                        é digital, e eu quero fazer parte dele!
+                    </p>
+
+                </div>
+
+                <!-- ✏️ MUDE: troque pela sua segunda foto (pode ser mais descontraída) -->
+                <div class="sobre__foto-container">
+                    <img
+                        src="https://placehold.co/300x380/c4b5fd/ffffff?text=FOTO+2"
+                        alt="[SEU NOME] — [contexto da foto, ex: no trabalho, evento, etc.]"
+                        class="sobre__foto"
+                    >
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             SEÇÃO HABILIDADES
+             ===================================================== -->
+        <section id="habilidades" class="secao secao--alt" aria-labelledby="titulo-habilidades">
+            <h2 class="secao__titulo" id="titulo-habilidades">Habilidades</h2>
+
+            <div class="habilidades__grid">
+
+                <!-- ✏️ MUDE: substitua pelos seus conhecimentos -->
+                <!-- Copie e cole o bloco abaixo para adicionar mais habilidades -->
+
+                <article class="card-habilidade">
+                    <!-- ✏️ MUDE: troque o emoji por um que represente a habilidade -->
+                    <span class="card-habilidade__icone" aria-hidden="true">💻</span>
+                    <!-- ✏️ MUDE: nome da habilidade -->
+                    <h3>HTML & CSS</h3>
+                    <!-- ✏️ MUDE: descrição em uma linha -->
+                    <p>Estruturação e estilização de páginas web</p>
+                </article>
+
+                <article class="card-habilidade">
+                    <span class="card-habilidade__icone" aria-hidden="true">⚡</span>
+                    <h3>JavaScript</h3>
+                    <p>Interatividade e lógica no front-end</p>
+                </article>
+
+                <!-- ✏️ ADICIONE suas habilidades — descomente e preencha: -->
+                <!--
+                <article class="card-habilidade">
+                    <span class="card-habilidade__icone" aria-hidden="true">🎨</span>
+                    <h3>SUA HABILIDADE</h3>
+                    <p>Descrição em uma linha</p>
+                </article>
+
+                <article class="card-habilidade">
+                    <span class="card-habilidade__icone" aria-hidden="true">📊</span>
+                    <h3>SUA HABILIDADE</h3>
+                    <p>Descrição em uma linha</p>
+                </article>
+                -->
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             SEÇÃO PORTFOLIO / GALERIA DE FOTOS
+             ===================================================== -->
+        <section id="portfolio" class="secao" aria-labelledby="titulo-portfolio">
+            <h2 class="secao__titulo" id="titulo-portfolio">Portfolio</h2>
+
+            <p class="secao__subtitulo">Minha trajetória e onde estou agora</p>
+
+            <div class="galeria" role="list">
+
+                <!-- Item 1 — Fundação Torino -->
+                <article class="galeria__item" role="listitem">
+                    <img
+                        src="https://placehold.co/400x300/1B2D6B/FFFFFF?text=Fundação+Torino%0AEscola+Internacional"
+                        alt="Logo da Fundação Torino Escola Internacional"
+                        loading="lazy"
+                    >
+                    <div class="galeria__overlay">
+                        <h3>Fundação Torino</h3>
+                        <p>Formada no Liceo Scientifico 2025</p>
+                    </div>
+                </article>
+
+                <!-- Item 2 — Ibmec -->
+                <article class="galeria__item" role="listitem">
+                    <img
+                        src="https://placehold.co/400x300/003087/F5A623?text=ibmec%0AQuem+faz+o+futuro%2C+faz+ibmec."
+                        alt="Logo do Ibmec — Quem faz o futuro, faz ibmec."
+                        loading="lazy"
+                    >
+                    <div class="galeria__overlay">
+                        <h3>Ibmec RJ</h3>
+                        <p>Estudante de CID-IA</p>
+                    </div>
+                </article>
+
+                <!-- Item 3 — IBTech -->
+                <article class="galeria__item" role="listitem">
+                    <img
+                        src="https://placehold.co/400x300/0f1b2e/7ec8e3?text=IBTech%0AIbmec"
+                        alt="Grupo IBTech do Ibmec"
+                        loading="lazy"
+                    >
+                    <div class="galeria__overlay">
+                        <h3>IBTech</h3>
+                        <p>Membro ativa do grupo de tecnologia</p>
+                    </div>
+                </article>
+
+                <!-- ✏️ ADICIONE mais itens descomentando e preenchendo: -->
+                <!--
+                <article class="galeria__item" role="listitem">
+                    <img src="imagens/projeto4.jpg" alt="[Descrição]" loading="lazy">
+                    <div class="galeria__overlay">
+                        <h3>Título</h3>
+                        <p>Descrição</p>
+                    </div>
+                </article>
+                -->
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             SEÇÃO VÍDEO
+             ===================================================== -->
+        <section id="video" class="secao secao--alt" aria-labelledby="titulo-video">
+            <h2 class="secao__titulo" id="titulo-video">Paixão pelo Tênis 🎾</h2>
+
+            <p class="secao__subtitulo">Um dos esportes que mais amo — o tênis!</p>
+
+            <div class="video__container">
+
+                <iframe
+                    src="https://www.youtube.com/embed/WXy5yZDWFAI"
+                    title="Tênis — Melhores momentos e pontos incríveis"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+
+                <!-- ✏️ OPÇÃO 2: Vídeo local (arquivo no seu computador) -->
+                <!-- Se preferir hospedar o arquivo, remova o iframe acima e descomente isto: -->
+                <!--
+                <video controls poster="imagens/capa-video.jpg">
+                    <source src="videos/meu-video.mp4" type="video/mp4">
+                    Seu navegador não suporta reprodução de vídeo HTML5.
+                </video>
+                -->
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             ELEMENTO CRIATIVO — seção livre!
+
+             Mostre sua personalidade aqui. Algumas ideias:
+             - Linha do tempo da sua trajetória (já incluída abaixo)
+             - Mapa de sonhos / objetivos futuros
+             - Citações favoritas com design especial
+             - Lista de conquistas
+             - Curiosidades sobre você em formato de card flip
+
+             ✏️ Mude o título e o conteúdo desta seção completamente!
+             ===================================================== -->
+        <section id="criativo" class="secao" aria-labelledby="titulo-criativo">
+
+            <h2 class="secao__titulo" id="titulo-criativo">Minha Jornada 🗺️</h2>
+
+            <p class="secao__subtitulo">Os marcos que me trouxeram até aqui</p>
+
+            <ol class="timeline" aria-label="Linha do tempo de Julia Dumont">
+
+                <li class="timeline__item">
+                    <div class="timeline__marcador" aria-hidden="true"></div>
+                    <div class="timeline__conteudo">
+                        <time class="timeline__ano" datetime="2007">2007</time>
+                        <h3>Primeiros passos no tênis 🎾</h3>
+                        <p>Comecei a praticar tênis cedo e descobri minha paixão pelo esporte
+                           e tudo que ele ensina: disciplina, foco e superação.</p>
+                    </div>
+                </li>
+
+                <li class="timeline__item">
+                    <div class="timeline__marcador" aria-hidden="true"></div>
+                    <div class="timeline__conteudo">
+                        <time class="timeline__ano" datetime="2022">2022</time>
+                        <h3>Fundação Torino — Liceo Scientifico</h3>
+                        <p>Entrei no Liceo Scientifico da Fundação Torino, uma escola
+                           internacional incrível que me deu uma base sólida em ciências
+                           e me abriu os olhos para o mundo.</p>
+                    </div>
+                </li>
+
+                <li class="timeline__item">
+                    <div class="timeline__marcador" aria-hidden="true"></div>
+                    <div class="timeline__conteudo">
+                        <time class="timeline__ano" datetime="2025">2025</time>
+                        <h3>Formatura — Liceo Scientifico 🎓</h3>
+                        <p>Me formei no Liceo Scientifico com muito orgulho. Esse capítulo
+                           encerrou e o próximo começou com tudo!</p>
+                    </div>
+                </li>
+
+                <li class="timeline__item">
+                    <div class="timeline__marcador" aria-hidden="true"></div>
+                    <div class="timeline__conteudo">
+                        <time class="timeline__ano" datetime="2025">2025</time>
+                        <h3>Ibmec — CID-IA & IBTech 🚀</h3>
+                        <p>Ingressei no curso de Ciência de Dados e Inteligência Artificial
+                           no Ibmec RJ e já faço parte do IBTech, o grupo de tecnologia
+                           da faculdade. Começa a aventura!</p>
+                    </div>
+                </li>
+
+            </ol>
+        </section>
+
+
+        <!-- =====================================================
+             SEÇÃO CONTATO
+             ===================================================== -->
+        <section id="contato" class="secao secao--alt" aria-labelledby="titulo-contato">
+            <h2 class="secao__titulo" id="titulo-contato">Vamos conversar?</h2>
+
+            <!-- ✏️ MUDE: mensagem de convite -->
+            <p class="secao__subtitulo">Estou aberta(o) a novas oportunidades e colaborações!</p>
+
+            <div class="contato__grid">
+
+                <!-- E-MAIL — Interação 2: clique para copiar -->
+                <!-- ✏️ MUDE: coloque seu e-mail em dois lugares: no data-email E no texto visível -->
+                <div
+                    class="contato__item contato__item--clicavel"
+                    id="copiarEmail"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Clique para copiar o e-mail"
+                    data-email="seuemail@exemplo.com"
+                >
+                    <span class="contato__icone" aria-hidden="true">📧</span>
+                    <span class="contato__texto">seuemail@exemplo.com</span>
+                    <span class="contato__dica">Clique para copiar</span>
+                </div>
+
+                <!-- LINKEDIN -->
+                <!-- ✏️ MUDE: substitua "SEUPERFIL" pelo seu usuário do LinkedIn -->
+                <a
+                    href="https://linkedin.com/in/SEUPERFIL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contato__item"
+                    aria-label="Perfil no LinkedIn (abre em nova aba)"
+                >
+                    <span class="contato__icone" aria-hidden="true">💼</span>
+                    <span class="contato__texto">linkedin.com/in/seuperfil</span>
+                </a>
+
+                <!-- GITHUB -->
+                <!-- ✏️ MUDE: substitua "SEUUSUARIO" pelo seu usuário do GitHub -->
+                <a
+                    href="https://github.com/SEUUSUARIO"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contato__item"
+                    aria-label="Perfil no GitHub (abre em nova aba)"
+                >
+                    <span class="contato__icone" aria-hidden="true">🐙</span>
+                    <span class="contato__texto">github.com/seuusuario</span>
+                </a>
+
+                <!-- ✏️ (OPCIONAL) Adicione outras redes sociais descomentando: -->
+                <!--
+                <a
+                    href="https://wa.me/55SEUNUMERO"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contato__item"
+                    aria-label="WhatsApp (abre em nova aba)"
+                >
+                    <span class="contato__icone" aria-hidden="true">💬</span>
+                    <span class="contato__texto">WhatsApp</span>
+                </a>
+
+                <a
+                    href="https://instagram.com/SEUPERFIL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contato__item"
+                    aria-label="Instagram (abre em nova aba)"
+                >
+                    <span class="contato__icone" aria-hidden="true">📸</span>
+                    <span class="contato__texto">@seuperfil</span>
+                </a>
+                -->
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         RODAPÉ
+         ===================================================== -->
+    <footer class="footer" role="contentinfo">
+        <!-- ✏️ MUDE: coloque seu nome -->
+        <p>&copy; <span id="anoAtual"></span> Seu Nome — Feito com HTML, CSS e JS puros</p>
+        <button class="btn-topo" id="btnTopo" aria-label="Voltar ao topo da página">↑ Voltar ao topo</button>
+    </footer>
+
+    <!-- Notificação de e-mail copiado (controlada via JS) -->
+    <div class="notificacao" id="notificacao" role="status" aria-live="polite" aria-atomic="true">
+        ✅ E-mail copiado para a área de transferência!
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
